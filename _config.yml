@@ -1,8 +1,8 @@
-title: Lokallisten Langeland
+title: Bedoon
 author:
-  name: Søren Ramsing
-  email: s.ramsing@outlook.dk
-description: Lokallisten Langeland
+  name: Farid Salti
+  email: foo@bar.com
+description: Bedoon kaffebar
 theme: minima
 plugins:
   - jekyll-feed
