@@ -16,3 +16,8 @@ collections:
     collections_dir: _pages
     output: true
     permalink: /:path
+
+  events:
+    collections_dir: _events
+    output: true
+    permalink: /:path
