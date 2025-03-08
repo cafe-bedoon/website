@@ -24,3 +24,16 @@ content:
       - { name: cover, label: Cover image, type: image }
       - { name: title, label: Title, type: string, required: true }
       - { name: body, label: Body, type: rich-text }
+  - name: events
+    label: events
+    type: collection
+    path: _events
+    view:
+      fields: [ cover, title ]
+    fields:
+      - { name: layout, type: string, hidden: true, default: event }
+      - { name: date, label: Date, type: date, options: { time:true, format: dd-MM-yyyy HH:mm } }
+      - { name: price, label: Price, type: number, default: 0 }
+      - { name: cover, label: Cover image, type: image }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: body, label: Body, type: rich-text }
