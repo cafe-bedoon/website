@@ -1,4 +1,4 @@
 ---
 layout: events
-title: events
+title: Events
 ---
