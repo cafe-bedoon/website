@@ -2,39 +2,40 @@
 layout: base
 ---
 
-<article class="post">
+<div class="post">
     <h1 class="page-heading">Events @ Bedoon</h1>
 
     {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+    <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
     <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li class="event-post" x-date="{{ post.date }} ">
-        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- for post in posts -%}
+        <li class="event-post" x-date="{{ post.date }} ">
+            <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
 
-        <span class="post-meta">{{ post.date | date: date_format }} {{ post.price+"kr" ? post.price != 0 : "gratis"}}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-            {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        <img src="{{ post.cover | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
+            <span class="post-meta">{{ post.date | date: date_format }} {{ post.price+"kr" ? post.price != 0 :
+                "gratis"}}
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+                {%- if forloop.last == false %}, {% endif -%}
+                {% endfor %}</span>
+            <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                </a>
+            </h3>
+            <img src="{{ post.cover | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
 
-          <div class="post-content e-content" itemprop="articleBody">
-    {{ post.content }}
-  </div>
-      </li>
-      {%- endfor -%}
+            <div class="post-content e-content" itemprop="articleBody">
+                {{ post.content }}
+            </div>
+        </li>
+        {%- endfor -%}
     </ul>
 
-  {%- endif -%}
+    {%- endif -%}
 
 
-</article>
+</div>
