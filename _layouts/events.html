@@ -13,7 +13,9 @@ layout: events
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
       <li class="event-post" x-date="{{ post.date }} ">
-        <span class="post-meta">{{ post.date | date: date_format }} af {% for author in post.author %}
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+
+        <span class="post-meta">{{ post.date | date: date_format }} {{ post.price+"kr" ? post.price != 0 : "gratis"}}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
             {%- if forloop.last == false %}, {% endif -%}
