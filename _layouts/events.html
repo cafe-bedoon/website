@@ -1,9 +1,27 @@
 ---
 layout: base
 ---
+<script>
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+  get: (searchParams, prop) => searchParams.get(prop),
+});
+    let showOldEvents = params.old; 
+</script>
+<style>
+    .events-heading {
+        font-size: 2em;
+    }
+   
+    .old-events {
+        color: gray;
+        font-size: 2em;
+        
+    }
+
+</style>
 
 <div class="post">
-    <h1 class="page-heading">Events @ Bedoon</h1>
+    <span class="events-heading"><a href="/events">Events</a> / <a href="/events?old=true" class="new-events">Old Events</a></span>
 
     {%- if site.events.size > 0 -%}
  
@@ -46,3 +64,47 @@ layout: base
 
 </div>
 
+
+<script>
+
+    if(!showOldEvents){
+
+    const events = document.getElementsByClassName("event-post")
+    console.log(events)
+    const now = new Date()
+for (var i = 0; i<events.length; i++) {
+    const elm = events[i];
+    const parts = elm.getAttribute("x-date").slice(0,10).split("-").map(x=>parseInt(x))
+    const date = new Date(parts[0], parts[1]-1, parts[2]); 
+    if(date < now){
+        elm.style.display = "none"
+    }
+
+    
+}
+    }
+// }
+//    for (var j = 0, col; col = row.cells[j]; j++) {
+
+//     if (col.classList.contains("date")) {
+//         let control_date = col.innerHTML.split('-');
+
+//         control_date = new Date(control_date [2], control_date[1] , control_date[0]);
+
+//         if (control_date == currentDate) {
+//             //this cell date is todays date
+
+//         }
+        
+//         if (control_date > firstDayOfCurrentWeek && control_date < lastDayOfCurentWeek) {
+//             //this cell date is in this week date
+//         }
+
+//         if (control_date > firstDayOfMonth && control_date < lastDayOfMonth) {
+//             //this cell date is in this monthdate
+//         }
+
+//     }
+//    }  
+
+</script>
