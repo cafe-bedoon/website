@@ -5,3 +5,18 @@
 .site-title {
   @include relative-font-size(2.0);
 }
+.event-post {
+  border-radius: 10px;
+  border: 2px dotted lightcoral;
+  padding:0 10px;
+  h3 {
+    border-bottom: 1px dotted lightcoral;
+    a {
+      color: black
+    }
+  }
+}
+
+.meta {
+  color:darkmagenta;
+}

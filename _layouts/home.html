@@ -23,15 +23,20 @@ layout: base
 
 
   {%- if site.events.size > 0 -%}
-  <h1 class="coming page-heading">Kommende events:</h1>
+  <h2 class="coming">Kommende events:</h2>
 
     <ul class="post-list">
       {%- assign time_format = "%H:%M" -%}
         {%- assign date_format = "%-d %b %Y " -%}
         {%- for event in site.events -%}
         <li class="event-post" x-date="{{ event.date }} ">
-
-            <span >
+          <h3>
+            <a class="post-link" href="{{ event.url | relative_url }}">
+                {{ event.title | escape }}
+            </a>
+        </h3>
+            <span class="meta">
+              <i>
                 {{ event.date | date: date_format }}
 
                 {%- if event.time -%}
@@ -39,15 +44,12 @@ layout: base
 
                 {%- else  -%}
                     @ 10:00
-                {%- endif -%}, 
+                {%- endif -%},&nbsp;
                 <span>{%- if event.price != 0 -%} {{ event.price}}kr  {%- else  -%} gratis{%- endif -%}
             </span>
+          </i>
                </span>
-            <h3>
-                <a class="post-link" href="{{ event.url | relative_url }}">
-                    {{ event.title | escape }}
-                </a>
-            </h3>
+            
             {%- if !!event.cover -%}
 
             <img src="{{ event.cover | prepend: site.baseurl }}" alt="{{ event.title }}" title="{{ event.title }}">
