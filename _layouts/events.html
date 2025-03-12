@@ -1,48 +1,48 @@
 ---
 layout: base
 ---
-<script>
-        const params = new Proxy(new URLSearchParams(window.location.search), {
-  get: (searchParams, prop) => searchParams.get(prop),
-});
-    let showOldEvents = params.old; 
-</script>
+
 <style>
     .events-heading {
-        font-size: 2em;
-    }
-   
-    .old-events {
-        color: gray;
-        font-size: 2em;
-        
+
+        a {
+            color: black;
+        }
+
+        padding-bottom: 15px;
     }
 
+    .new-events {
+        color: gray;
+        font-size: 2.625rem;
+
+    }
 </style>
 
 <div class="post">
-    <span class="events-heading"><a href="/events">Events</a> / <a href="/events?old=true" class="new-events">Old Events</a></span>
+    <div class="events-heading"><a href="/events" class="new-events">Events</a> <a href="/events?old=true">(Alle
+            Events)</a></div>
 
     {%- if site.events.size > 0 -%}
- 
+
     <ul class="post-list">
         {%- assign time_format = "%H:%M" -%}
         {%- assign date_format = "%-d %b %Y " -%}
         {%- for event in site.events -%}
         <li class="event-post" x-date="{{ event.date }} ">
 
-            <span >
+            <span>
                 {{ event.date | date: date_format }}
 
                 {%- if event.time -%}
                 @ {{ event.date | date: time_format }}
 
-                {%- else  -%}
-                    @ 10:00
-                {%- endif -%}, 
-                <span>{%- if event.price != 0 -%} {{ event.price}}kr  {%- else  -%} gratis{%- endif -%}
+                {%- else -%}
+                @ 10:00
+                {%- endif -%},
+                <span>{%- if event.price != 0 -%} {{ event.price}}kr {%- else -%} gratis{%- endif -%}
+                </span>
             </span>
-               </span>
             <h3>
                 <a class="post-link" href="{{ event.url | relative_url }}">
                     {{ event.title | escape }}
@@ -51,7 +51,7 @@ layout: base
             {%- if !!event.cover -%}
 
             <img src="{{ event.cover | prepend: site.baseurl }}" alt="{{ event.title }}" title="{{ event.title }}">
-{%- endif -%}
+            {%- endif -%}
             <div class="post-content e-content" itemprop="articleBody">
                 {{ event.content }}
             </div>
@@ -63,48 +63,3 @@ layout: base
 
 
 </div>
-
-
-<script>
-
-    if(!showOldEvents){
-
-    const events = document.getElementsByClassName("event-post")
-    console.log(events)
-    const now = new Date()
-for (var i = 0; i<events.length; i++) {
-    const elm = events[i];
-    const parts = elm.getAttribute("x-date").slice(0,10).split("-").map(x=>parseInt(x))
-    const date = new Date(parts[0], parts[1]-1, parts[2]); 
-    if(date < now){
-        elm.style.display = "none"
-    }
-
-    
-}
-    }
-// }
-//    for (var j = 0, col; col = row.cells[j]; j++) {
-
-//     if (col.classList.contains("date")) {
-//         let control_date = col.innerHTML.split('-');
-
-//         control_date = new Date(control_date [2], control_date[1] , control_date[0]);
-
-//         if (control_date == currentDate) {
-//             //this cell date is todays date
-
-//         }
-        
-//         if (control_date > firstDayOfCurrentWeek && control_date < lastDayOfCurentWeek) {
-//             //this cell date is in this week date
-//         }
-
-//         if (control_date > firstDayOfMonth && control_date < lastDayOfMonth) {
-//             //this cell date is in this monthdate
-//         }
-
-//     }
-//    }  
-
-</script>

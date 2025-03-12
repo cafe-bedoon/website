@@ -14,7 +14,6 @@ layout: base
     {%- endif -%}
   {%- endfor -%}
 
-  <h1 class="page-heading">Nyheder:</h1>
 
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
@@ -23,50 +22,43 @@ layout: base
   {% endif %}
 
 
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }} af {% for author in post.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-            {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        <img src="{{ post.cover | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
+  {%- if site.events.size > 0 -%}
+  <h1 class="coming page-heading">Kommende events:</h1>
 
-          <div class="post-content e-content" itemprop="articleBody">
-    {{ post.content }}
-  </div>
-      </li>
+    <ul class="post-list">
+      {%- assign time_format = "%H:%M" -%}
+        {%- assign date_format = "%-d %b %Y " -%}
+        {%- for event in site.events -%}
+        <li class="event-post" x-date="{{ event.date }} ">
+
+            <span >
+                {{ event.date | date: date_format }}
+
+                {%- if event.time -%}
+                @ {{ event.date | date: time_format }}
+
+                {%- else  -%}
+                    @ 10:00
+                {%- endif -%}, 
+                <span>{%- if event.price != 0 -%} {{ event.price}}kr  {%- else  -%} gratis{%- endif -%}
+            </span>
+               </span>
+            <h3>
+                <a class="post-link" href="{{ event.url | relative_url }}">
+                    {{ event.title | escape }}
+                </a>
+            </h3>
+            {%- if !!event.cover -%}
+
+            <img src="{{ event.cover | prepend: site.baseurl }}" alt="{{ event.title }}" title="{{ event.title }}">
+{%- endif -%}
+            <div class="post-content e-content" itemprop="articleBody">
+                {{ event.content }}
+            </div>
+        </li>
       {%- endfor -%}
     </ul>
 
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
 
   {%- endif -%}
 
