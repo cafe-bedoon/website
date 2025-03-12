@@ -29,7 +29,7 @@ content:
     type: collection
     path: _events
     view:
-      fields: [ cover, title, date, price ]
+      fields: [ cover, title, date ]
     fields:
       - { name: layout, type: string, hidden: true, default: event }
       - { name: date, label: Date, type: date, options: { time:true, format: dd-MM-yyyy HH:mm } }
