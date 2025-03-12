@@ -5,28 +5,26 @@ layout: base
 <div class="post">
     <h1 class="page-heading">Events @ Bedoon</h1>
 
-    {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-    <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
+    {%- if site.events.size > 0 -%}
+ 
     <ul class="post-list">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {%- for post in posts -%}
-        <li class="event-post" x-date="{{ post.date }} ">
+        {%- for event in events -%}
+        <li class="event-post" x-date="{{ event.date }} ">
             <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
 
-            <span class="post-meta">{{ post.date | date: date_format }} {{ post.price+"kr" ? post.price != 0 :
+            <span class="post-meta">{{ event.date | date: date_format }} {{ event.price+"kr" ? event.price != 0 :
                 "gratis" }}
                </span>
             <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
+                <a class="post-link" href="{{ event.url | relative_url }}">
+                    {{ event.title | escape }}
                 </a>
             </h3>
-            <img src="{{ post.cover | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
+            <img src="{{ event.cover | prepend: site.baseurl }}" alt="{{ event.title }}" title="{{ event.title }}">
 
             <div class="post-content e-content" itemprop="articleBody">
-                {{ post.content }}
+                {{ event.content }}
             </div>
         </li>
         {%- endfor -%}
@@ -36,3 +34,4 @@ layout: base
 
 
 </div>
+
