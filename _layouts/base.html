@@ -27,18 +27,25 @@
 
     const events = document.getElementsByClassName("event-post")
     const coming = document.getElementsByClassName("coming")
-    events.length < coming.length <= 0 ? null : coming[0].style.display = "none";
-    console.log(events)
+  
+    console.log("events", events)
     const now = new Date()
+    now.setDate(now.getDate()-1)
+    var coming_events = 0
     for (var i = 0; i < events.length; i++) {
       const elm = events[i];
       const parts = elm.getAttribute("x-date").slice(0, 10).split("-").map(x => parseInt(x))
       const date = new Date(parts[0], parts[1] - 1, parts[2]);
       if (date < now) {
         elm.style.display = "none"
+      }else{
+        coming_events+=1
       }
 
 
+    }
+    if (!coming_events){
+      coming[0].style.display = "none";
     }
   } else {
 

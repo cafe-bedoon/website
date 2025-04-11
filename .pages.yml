@@ -29,11 +29,11 @@ content:
     type: collection
     path: _events
     view:
-      fields: [ cover, date, price, title ]
+      fields: [ cover, date,  hour, price, title ]
     fields:
       - { name: layout, type: string, hidden: true, default: event }
-      - { name: date, label: Date, type: date, required: true, options: { time:false, format: dd-MM-yyyy HH:mm } }
-      - { name: time, label: Time, type: date, required: false, options: { time:true, format: HH:mm } }
+      - { name: date, label: Date, type: date, required: true, options: { time:false, format: dd-MM-yyyy } }
+      - { name: hour, label: Hour, type: number, required: true, options: {min: 0, max:23} }
       - { name: price, label: Price, type: number, required: true, default: 0 }
       - { name: cover, label: Cover image, type: image }
       - { name: title, label: Title, type: string, required: true }
