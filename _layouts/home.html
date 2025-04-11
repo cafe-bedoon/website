@@ -38,7 +38,7 @@ layout: base
               <i>
                 {{ event.date | date: date_format }}
 
-                {%- if event.time -%}
+                {%- if event.hour -%}
                 @ {{ event.hour  }}:00
 
                 {%- else  -%}

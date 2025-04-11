@@ -1,6 +1,7 @@
 ---
 layout: event
-date: 28-03-2025 00:00
+date: 28-03-2025
+hour: 14
 price: 0
 title: Orgel John & DJ Aggi
 ---

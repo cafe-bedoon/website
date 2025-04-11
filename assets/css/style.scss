@@ -5,3 +5,14 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+
+  .some {
+    margin-left: 1em;
+    a {
+      padding:0 2px;
+      img {
+        height:1.5em;
+      }
+    }
+  }
