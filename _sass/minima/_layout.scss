@@ -7,7 +7,10 @@
   line-height: $base-line-height * $base-font-size * 2.25;
 
   // Positioning context for the mobile navigation icon
-  position: relative;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .site-title {
@@ -194,7 +197,9 @@
   }
 }
 
-
+h2 {
+  margin-top:2em;
+}
 
 /**
  * Page content
@@ -202,6 +207,8 @@
 .page-content {
   padding: $spacing-unit 0;
   flex: 1 0 auto;
+  margin-bottom:10em;
+  margin-top:2em;
 }
 
 .page-heading {

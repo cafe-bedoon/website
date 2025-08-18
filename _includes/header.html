@@ -4,7 +4,7 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths =  default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a><span class="some"><a href="https://www.facebook.com/people/Keramik_og_Kaffe"><img src="/assets/f.png" alt=""></a><a href="https://www.instagram.com/bedoon_cafe"><img src="/assets/i.png" alt=""></a></span>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a><span class="some"><a href="https://www.facebook.com/people/Bedoon-Caf%C3%A9/61575885336733/#"><img src="/assets/f.png" alt=""></a><a href="https://www.instagram.com/bedoon_cafe"><img src="/assets/i.png" alt=""></a></span>
 
     {%- if titles_size > 0 -%}
       <nav class="site-nav">
@@ -18,14 +18,10 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link" href="/#åbningstider">Åbningstider</a>
-
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title  and my_page.title != "frontpage" -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
+          <a class="page-link" href="/#abningstider">Åbningstider</a>
+          <a class="page-link" href="/#events">Begivenheder</a>
+          <a class="page-link" href="/leje">Brug vores lokaler</a>
+          <a class="page-link" href="/#kontakt">Kontakt</a>
         </div>
       </nav>
     {%- endif -%}

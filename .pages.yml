@@ -1,18 +1,5 @@
 media: media
 content:
-  - name: posts
-    label: Posts
-    type: collection
-    path: _posts
-    view:
-      fields: [ cover, title ]
-    fields:
-      - { name: layout, type: string, hidden: true, default: post }
-      - { name: cover, label: Cover image, type: image }
-      - { name: title, label: Title, type: string, required: true }
-#      - { name: categories, label: Categories, type: select, options: { values: [ "misc", "junk" ] } }
-      - { name: author, label: Authors, type: string, list: true }
-      - { name: body, label: Body, type: rich-text }
   - name: pages
     label: Pages
     type: collection
@@ -21,6 +8,7 @@ content:
       fields: [ cover, title ]
     fields:
       - { name: layout, type: string, hidden: true, default: post }
+      - { name: id, label: id, type: string, hidden: true }
       - { name: cover, label: Cover image, type: image }
       - { name: title, label: Title, type: string, required: true }
       - { name: body, label: Body, type: rich-text }

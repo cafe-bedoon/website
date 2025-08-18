@@ -8,46 +8,41 @@
   {%- include header.html -%}
 
   <main class="page-content" aria-label="Content">
-    <div class="wrapper">
+    <div class="wrapper main">
       {{ content }}
     </div>
   </main>
 
-  {%- include footer.html -%}
-
 </body>
 
 <script>
-  const params = new Proxy(new URLSearchParams(window.location.search), {
-    get: (searchParams, prop) => searchParams.get(prop),
-  });
-  let showOldEvents = params.old;
-  if (!showOldEvents) {
 
 
-    const events = document.getElementsByClassName("event-post")
-    const coming = document.getElementsByClassName("coming")
-  
-    console.log("events", events)
-    const now = new Date()
-    now.setDate(now.getDate()-1)
-    var coming_events = 0
-    for (var i = 0; i < events.length; i++) {
-      const elm = events[i];
-      const parts = elm.getAttribute("x-date").slice(0, 10).split("-").map(x => parseInt(x))
-      const date = new Date(parts[0], parts[1] - 1, parts[2]);
-      if (date < now) {
-        elm.style.display = "none"
-      }else{
-        coming_events+=1
-      }
+  const events = document.getElementsByClassName("event-post")
+  const coming = document.getElementById("coming-events")
+  const noComing = document.getElementById("no-coming-events")
 
-
+  console.log("events", events)
+  const now = new Date()
+  now.setDate(now.getDate() - 1)
+  var coming_events = 0
+  for (var i = 0; i < events.length; i++) {
+    const elm = events[i];
+    const parts = elm.getAttribute("x-date").slice(0, 10).split("-").map(x => parseInt(x))
+    const date = new Date(parts[0], parts[1] - 1, parts[2]);
+    console.log(date, now)
+    if (date < now) {
+      elm.style.display = "none"
+    } else {
+      coming_events += 1
     }
-    if (!coming_events){
-      coming[0].style.display = "none";
-    }
+
+
+  }
+  if (!coming_events) {
+    coming.style.display = "none";
   } else {
+    noComing.style.display = "none";
 
   }
 
