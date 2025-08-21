@@ -5,22 +5,19 @@ title: Brug vores lokaler til arrangementer
 
 ## Hold dit arrangement i Bedoon
  
-140 m² med plads til 40 siddende eller 80 stående gæster. Perfekt til alt fra fødselsdage og konfirmationer til kreative workshops. Caféen udlejes for minimum 6 timer.
+140 m² med plads til 40 siddende eller 80 stående gæster. Perfekt til alt fra fødselsdage og konfirmationer til kreative workshops. Caféen udlejes for **minimum 6 timer**.
 
 
-| Vare                                | Pris     |
-| :---------------------------------- | :------- |
-| **Lokaleleje (6 timer/slut kl. 18):**|          |
-| - Søndag                            | 3500 DKK |
-| - Man-lørdag                        | 6000 DKK |
-| **Lokaleleje (6 timer/starter kl. 18):**|          |
-| - Man-søn                           | 4500 DKK |
-| **Ekstra time**                         | 450 DKK  |
-| **Åbent i baren**                       | 1000 DKK |
-| **Rengøring:**                           |          |
-| - Arrangement før 18                | 500 DKK  |
-| - Arrangement efter 18              | 1500 DKK |
-| **Depositum**                           | 1000 DKK |
+| Vare                               | | Pris     |
+| :----------------------------------|:- | :------- |
+| Lokaleleje (slut kl. 18) | Søndag| 3500 DKK |
+| Lokaleleje (slut kl. 18) | Mandag-Lørdag | 6000 DKK |
+| Lokaleleje (starter kl. 18)| Mandag-Søndag| 4500 DKK |
+| Ekstra time                        | | 450 DKK  |
+| Åbent i baren                      | | 1000 DKK |
+| Rengøring: før 18               | | 500 DKK  |
+| Rengøring: efter 18             | | 1500 DKK |
+| Depositum                          | | 1000 DKK |
 
 
 
@@ -48,8 +45,9 @@ Send en e-mail til [keramikogkaffe@gmail.com](mailto:keramikogkaffe@gmail.com) m
 
  
 ## Booking og betaling
-Når din booking er godkendt, sender vi en faktura på depositum (1.000 DKK).
-Når vi har modtaget depositummet, får du en ordrebekræftelse samt en faktura for resten af beløbet, som skal betales senest 7 dage før bookingdatoen.
+Når din booking er modtaget, sender vi en faktura på booking og depositum.
+Du bekræfter din booking ved at betale depositum indenfor 14 dage.
+Booking betales senest 7 dage før afvikling af arrangementet.
  
 ## Afbestilling
 Afbestilling er gratis indtil 30 dage før bookingdatoen. Ved afbestilling senere end dette, beholder vi depositummet.

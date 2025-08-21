@@ -5,17 +5,16 @@ title: Brug vores lokaler til møder
 
 ## Mødelokale med sjæl og varme
 Hold dit næste møde i vores hyggelige mødelokale i caféen. Lokalet er afskærmet af glasvægge, så du får både ro og caféens gode stemning. Perfekt til møder, workshops eller kreative timer. 
-Vand, filterkaffe og projektor inkluderet i lejen.
+Vand, filterkaffe og projektor inkluderet i lejen. Der er plads til 40 siddende personer i vores 70 kvm.
  
-| Vare                                   | Kapacitet                    | Pris              | Inkl        |
-| :------------------------------------- | :--------------------------- | :---------------- | :---------- |
-| Leje af lokale                         | 40 siddende personer/ 70 kvm | 750 DKK/time      | Vand        |
-|                                        |                              |  2500 DKK/ 4 timer|  Filterkaffe| 
-|                                        |                              |                   |  Projektor  | 
-| Teknikpakke: Højtalere og mikrofon     |                              | 300 DKK           |             |
-| Morgenpakke:                           |                              | 65 DKK            |             |
-| Kaffe, Bolle m. ost                    |                              |                   |             |
-| Frokostpakke: Kaffe/sodavand og panini |                              | 85 DKK            |             |
+| Vare                                   | Pris              |
+| :------------------------------------- | :---------------- |
+| Leje af lokale / pr time               | 750 DKK     |
+| Leje af lokale / 4 timer    |  2500 DKK |
+| Teknikpakke: Højtalere og mikrofon     | 300 DKK           |
+| Morgenpakke: Kaffe, Bolle m. ost       | 65 DKK            |
+| Frokostpakke: Kaffe/sodavand og panini | 85 DKK            |
+| Depositum                           | 1000 DKK |
 
 
 ## Sådan booker du
@@ -32,9 +31,11 @@ Send en e-mail til [keramikogkaffe@gmail.com](mailto:keramikogkaffe@gmail.com) m
 8. Eventuelle kommentarer eller særlige ønsker
  
 ## Booking og betaling
-Når din booking er godkendt, sender vi en faktura på depositum (1.000 DKK).
-Når vi har modtaget depositummet, får du en ordrebekræftelse samt en faktura for resten af beløbet, som skal betales senest 7 dage før bookingdatoen.
+Når din booking er modtaget, sender vi en faktura på booking og depositum.
+Du bekræfter din booking ved at betale depositum indenfor 14 dage.
+Booking betales senest 7 dage før afvikling af arrangementet.
  
 ## Afbestilling
 Afbestilling er gratis indtil 30 dage før bookingdatoen. Ved afbestilling senere end dette, beholder vi depositummet.
+ 
 
