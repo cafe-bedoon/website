@@ -1,5 +1,6 @@
 ---
 layout: post
+cover: /media/IMG_0161.jpg
 title: Brug vores lokaler til møder
 ---
 ## Mødelokale med sjæl og varme
