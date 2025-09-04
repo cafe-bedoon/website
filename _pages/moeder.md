@@ -3,6 +3,8 @@ layout: post
 cover: /media/IMG_0161.jpg
 title: Brug vores lokaler til møder
 ---
+![](/media/IMG_0161.jpg)
+
 ## Mødelokale med sjæl og varme
 
 Hold dit næste møde i vores hyggelige mødelokale i caféen. Lokalet er afskærmet af glasvægge, så du får både ro og caféens gode stemning. Perfekt til møder, workshops eller kreative timer. Vand, filterkaffe og projektor inkluderet i lejen. Der er plads til 30 siddende personer i vores 70 kvm.
