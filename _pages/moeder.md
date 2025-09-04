@@ -1,6 +1,5 @@
 ---
 layout: post
-cover: /media/IMG_0161.jpg
 title: Brug vores lokaler til møder
 ---
 ![](/media/IMG_0161.jpg)
