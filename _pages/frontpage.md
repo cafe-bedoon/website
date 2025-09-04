@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: /media/skilt.png
+cover: /media/menukort.jpg
 title: frontpage
 ---
 # Bedoon er Svendborgs kaffebar
