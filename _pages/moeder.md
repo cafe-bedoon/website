@@ -1,8 +1,11 @@
 ---
 layout: post
+cover: /media/IMG_0161_2.jpg
 title: Brug vores lokaler til møder
 ---
 ![](/media/IMG_0161.jpg)
+
+![](/media/IMG_0161_2.jpg)
 
 ## Mødelokale med sjæl og varme
 
