@@ -1,7 +1,7 @@
 ---
 layout: post
 cover: /media/IMG_0161_2.jpg
-title: Brug vores lokaler til møder
+title: Lej Bedoons lokaler til møder
 ---
 ![](/media/IMG_0161.jpg)
 
