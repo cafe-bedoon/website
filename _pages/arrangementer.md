@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Brug vores lokaler til arrangementer
+title: Lej Bedoons lokaler til events
 ---
 ![](/media/arrangementer_billede.jpg)
 
