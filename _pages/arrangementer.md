@@ -6,7 +6,7 @@ title: Lej Bedoons lokaler til events
 
 ## Hold dit arrangement i Bedoon
 
-140 m² med plads til 40 siddende eller 80 stående gæster. Perfekt til alt fra fødselsdage og konfirmationer til kreative workshops. Prisen for lokaleleje dækker op til 6 timers brug af lokalet.
+140 m² med plads til 40 siddende eller 80 stående gæster. Perfekt til alt fra fødselsdage og konfirmationer til kreative workshops.
 
 Prisen for lokaleleje dækker op til 6 timers brug af lokalet.
 
