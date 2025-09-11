@@ -13,8 +13,8 @@ Hold dit næste møde i vores hyggelige mødelokale i caféen. Lokalet er afskæ
 
 | Vare | Pris |
 | --- | --- |
-| Leje af lokale / pr time | 750 DKK |
-| Leje af lokale / 4 timer | 2500 DKK |
+| Leje af lokale (pr time) | 500 DKK |
+| Leje af lokale (hel dag) | 2000 DKK |
 | Teknikpakke: Højtalere og mikrofon | 300 DKK |
 | Morgenpakke: Kaffe, Bolle m. ost | 65 DKK |
 | Frokostpakke: Kaffe/sodavand og panini | 85 DKK |
